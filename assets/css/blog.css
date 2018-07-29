@@ -494,6 +494,10 @@ a:active {
   -webkit-transform: translateY(calc(70px + 4em));
           transform: translateY(calc(70px + 4em));
 }
+.blog-1 .data span {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+}
 .blog-1 .title a {
   color: #fff;
 }
@@ -503,6 +507,7 @@ a:active {
   margin: 2em auto 1em;
   text-align: center;
   font-size: 12px;
+  font-family: 'Cabin Sketch', cursive;
   color: #fff;
   line-height: 1;
   position: relative;
