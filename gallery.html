@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/css/gallery.css" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid1">
+<div class="content">
+<div class="container-fluidnav">
+    <div class="logo"><a href="index.html"><img src="./assets/media/logo.png"></a></div>
+</div>
+<div class="outer-menu">
+<input class="checkbox-toggle" type="checkbox" />
+<div class="hamburger">
+<div></div>
+</div>
+<div class="menu">
+<div>
+<div>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="whoweare.html">Who We Are</a></li>
+    <li><a href="eventservices.html">Event Services</a></li>
+    <li><a href="ourexcellence.html">Our Excellence</a></li>
+    <li><a href="reachus.html">Reach Us</a></li>
+    </ul>
+</div>
+</div>
+</div>     
+</div>
+
+<div class="container-fluid2">
+<div class="main">
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All Events</button>
+  <button class="btn" onclick="filterSelection('Wedding Script')"> Wedding Script</button>
+  <button class="btn" onclick="filterSelection('Product Launch')"> Product Launch</button>
+  <button class="btn" onclick="filterSelection('Annual Events')">Annual Events</button>
+  <button class="btn" onclick="filterSelection('Rewards & Recognition')">Rewards & Recognition</button>
+</div>
+<hr class="my-5" />
+<div class="row">
+     
+  <div class="column Product Launch">
+    <a href="product.html">
+    <div class="w3-card-4" style="width:100%">
+    <img src="./assets/media/product/2.jpg"style="width:100%">
+    <div class="w3-container w3-center">
+    <p>BOOK LAUNCH BY AACHI GROUP</p>
+    </div>
+    </div>
+    </a>
+  </div>
+  
+  <div class="column Rewards & Recognition">
+    <a href="rewards.html">
+    <div class="w3-card-4" style="width:100%">
+    <img src="./assets/media/rewards/3.jpg"style="width:100%">
+    <div class="w3-container w3-center">
+    <p>BOOKING.COM</p>
+    </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="column Annual Events">
+    <a href="annual.html">
+    <div class="w3-card-4" style="width:100%">
+    <img src="./assets/media/annual/7.jpg"style="width:100%">
+    <div class="w3-container w3-center">
+    <p>SP INFOCITY</p>
+    </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="column Wedding Script">
+    <a href="wedding.html">
+    <div class="w3-card-4" style="width:100%">
+    <img src="./assets/media/wedding/2.jpg"style="width:100%">
+    <div class="w3-container w3-center">
+    <p>VENUE: GRT RADISSON BLU – TEMPLE BAY</p>
+    </div>
+    </div>
+    </a>
+  </div>
+
+</div>
+</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
