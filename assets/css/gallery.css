@@ -68,6 +68,9 @@
   background-color: rgb(17, 52, 105);
   color: white;
 }
+.row p{
+  font-family: 'Bubblegum Sans', cursive;
+}
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .row p{
