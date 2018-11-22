@@ -14,22 +14,21 @@
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 </head>
 <body>
 <div class="container-fluid1">
 <div class="content">
 <div class="container-fluidnav">
-    <div class="logo"><a href="index.html"><img src="./assets/media/logo.png"></a></div>
+    <div class="logo">
+    <a href="index.html"><img src="./assets/media/logo.png"></a>
+    </div>
 </div>
-<div class="outer-menu">
-<input class="checkbox-toggle" type="checkbox" />
-<div class="hamburger">
-<div></div>
-</div>
-<div class="menu">
-<div>
-<div>
+<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+<div class="overlay" id="overlay">
+<nav class="overlay-menu">
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="whoweare.html">Who We Are</a></li>
@@ -37,10 +36,8 @@
     <li><a href="ourexcellence.html">Our Excellence</a></li>
     <li><a href="reachus.html">Reach Us</a></li>
     </ul>
+</nav>
 </div>
-</div>
-</div>     
-</div> 
 <div id="box1">
     <h1>We Are<br><mark style="color: black; background-color: white;">FA</mark> events</h1>
 </div>
@@ -138,15 +135,15 @@
     <h4>Quick links</h4>
     <h6>
     <br>
-    <a href="" style="color: rgb(231, 222, 222);">>> home</a>
+    <a href="index.html" style="color: rgb(231, 222, 222);">>> home</a>
     <br><br>
-    <a href="" style="color: rgb(231, 222, 222);">>> who we are</a>
+    <a href="whoweare.html" style="color: rgb(231, 222, 222);">>> who we are</a>
     <br><br>
-    <a href="" style="color: rgb(231, 222, 222);">>> event services</a>
+    <a href="eventservices.html" style="color: rgb(231, 222, 222);">>> event services</a>
     <br><br>
-    <a href="" style="color: rgb(231, 222, 222);">>> our excellence</a>
+    <a href="ourexcellence.html" style="color: rgb(231, 222, 222);">>> our excellence</a>
     <br><br>
-    <a href="" style="color: rgb(231, 222, 222);">>> reach us</a>
+    <a href="reachus.html" style="color: rgb(231, 222, 222);">>> reach us</a>
     </h6>
 </div>
 <div class="first col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10 col-xs-5">
@@ -213,6 +210,17 @@
           }
       }
   })
+</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+  $("#toggle").click(function() {
+$(this      ).toggleClass("active");
+$("#overlay").toggleClass("open");
+});
 </script>
 </body>
 </html>

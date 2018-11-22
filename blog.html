@@ -14,31 +14,28 @@
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid1">
 <div class="content">
-    <div class="container-fluidnav">
-        <div class="logo"><a href="index.html"><img src="./assets/media/logo.png"></a></div>
-    </div>
-<div class="outer-menu">
-<input class="checkbox-toggle" type="checkbox" />
-<div class="hamburger">
-    <div></div>
-</div>
-<div class="menu">
-    <div>
-    <div>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="whoweare.html">Who We Are</a></li>
-        <li><a href="eventservices.html">Event Services</a></li>
-        <li><a href="ourexcellence.html">Our Excellence</a></li>
-        <li><a href="reachus.html">Reach Us</a></li>
-        </ul>
-    </div>
+<div class="container-fluidnav">
+    <div class="logo">
+    <a href="index.html"><img src="./assets/media/logo.png"></a>
     </div>
 </div>
+<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+<div class="overlay" id="overlay">
+<nav class="overlay-menu">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="whoweare.html">Who We Are</a></li>
+    <li><a href="eventservices.html">Event Services</a></li>
+    <li><a href="ourexcellence.html">Our Excellence</a></li>
+    <li><a href="reachus.html">Reach Us</a></li>
+    </ul>
+</nav>
 </div>
 <div class="cards">
 <div class="blog-1 card">
@@ -69,72 +66,83 @@
     <a href="https://www.youtube.com/channel/UCeYeKGVnYNgks5Knr0PHeOQ" target="_blank"><button class="button button5"><i class="fab fa-youtube"></i></button></a>
     <a href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fplus.google.com%2Fup%2F%3Fcontinue%3Dhttps%3A%2F%2Fplus.google.com%2Fpeople&followup=https%3A%2F%2Fplus.google.com%2Fup%2F%3Fcontinue%3Dhttps%3A%2F%2Fplus.google.com%2Fpeople&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><button class="button button6"><i class="fab fa-google-plus-g"></i></button></a>
 </div>
-    <div class="footer">
-    <div class="container-fluidfooter">
-    <div class="address">
-        <h4>Contact Us</h4>
-        <h5>
-        <br>FA EVENTS AND MEDIA PRIVATE LIMITED,
-        <br> Plot No: 33, Meerlan Tower,
-        <br> 3rd Floor, Hanumantha Road,
-        <br> Balaji Nagar, Royapettah,
-        <br> Chennai – 600014.
-        <br><br>Email-id : info@faevents.com
-        <br> Phone : +91-44-45038000
-        </h5>
+<div class="footer">
+<div class="container-fluidfooter">
+<div class="address">
+    <h4>Contact Us</h4>
+    <h5>
+    <br>FA EVENTS AND MEDIA PRIVATE LIMITED,
+    <br> Plot No: 33, Meerlan Tower,
+    <br> 3rd Floor, Hanumantha Road,
+    <br> Balaji Nagar, Royapettah,
+    <br> Chennai – 600014.
+    <br><br>Email-id : info@faevents.com
+    <br> Phone : +91-44-45038000
+    </h5>
+</div>
+<div class="quicklinks">
+    <h4>Quick links</h4>
+    <h6>
+    <br>
+    <a href="index.html" style="color: rgb(231, 222, 222);">>> home</a>
+    <br><br>
+    <a href="whoweare.html" style="color: rgb(231, 222, 222);">>> who we are</a>
+    <br><br>
+    <a href="eventservices.html" style="color: rgb(231, 222, 222);">>> event services</a>
+    <br><br>
+    <a href="ourexcellence.html" style="color: rgb(231, 222, 222);">>> our excellence</a>
+    <br><br>
+    <a href="reachus.html" style="color: rgb(231, 222, 222);">>> reach us</a>
+    </h6>
+</div>
+<div class="first col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10 col-xs-5">
+    <h4>Talk to us</h4>
+    <div id="form-div">
+    <form>
+    <br>
+    <div class="form-row">
+    <div class="form-group col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <input type="name" class="form-control" id="" placeholder="Name*">
     </div>
-    <div class="quicklinks">
-        <h4>Quick links</h4>
-        <h6>
-        <br>
-        <a href="index.html" style="color: rgb(231, 222, 222);">>> home</a>
-        <br><br>
-        <a href="whoweare.html" style="color: rgb(231, 222, 222);">>> who we are</a>
-        <br><br>
-        <a href="eventservices.html" style="color: rgb(231, 222, 222);">>> event services</a>
-        <br><br>
-        <a href="ourexcellence.html" style="color: rgb(231, 222, 222);">>> our excellence</a>
-        <br><br>
-        <a href="reachus.html" style="color: rgb(231, 222, 222);">>> reach us</a>
-        </h6>
+    <div class="form-group col-lg-6 col-xl-5 col-md-6 col-sm-6 col-xs-6">
+        <input type="mobile" class="form-control" id="" placeholder="Mobile Number*">
     </div>
-    <div class="first col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10 col-xs-5">
-        <h4>Talk to us</h4>
-        <div id="form-div">
-        <form>
-        <br>
-        <div class="form-row">
-        <div class="form-group col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <input type="name" class="form-control" id="" placeholder="Name*">
-        </div>
-        <div class="form-group col-lg-6 col-xl-5 col-md-6 col-sm-6 col-xs-6">
-            <input type="mobile" class="form-control" id="" placeholder="Mobile Number*">
-        </div>
-        </div>
-        <div class="form-row">
-        <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="email" class="form-control" id="" placeholder="Email*">
-        </div>
-        </div>
-        <div class="form-row">
-        <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="subject" class="form-control" id="" placeholder="Subject*">
-        </div>
-        </div>    
-        <div class="form-row">
-        <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <textarea name="" id="" cols="30" rows="6" class="form-control" placeholder="Enter the message"></textarea>
-        </div>
-        </div>
-        <button type="submit" class="btn" style="background-color: rgba(0, 0, 0, 0.692);color: white;">Send</button>
-        <p></p>
-        </form>
-        </div>
     </div>
-    </div><hr>
-    <div class="copyrights" style="color: white; font-size: 12px; text-align: center;">  
-        © Copyrights FAevents and media pvt ltd, All Rights Reserved.
+    <div class="form-row">
+    <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <input type="email" class="form-control" id="" placeholder="Email*">
     </div>
-    </div>        
+    </div>
+    <div class="form-row">
+    <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <input type="subject" class="form-control" id="" placeholder="Subject*">
+    </div>
+    </div>    
+    <div class="form-row">
+    <div class="form-group col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <textarea name="" id="" cols="30" rows="6" class="form-control" placeholder="Enter the message"></textarea>
+    </div>
+    </div>
+    <button type="submit" class="btn" style="background-color: rgba(0, 0, 0, 0.692);color: white;">Send</button>
+    <p></p>
+    </form>
+    </div>
+</div>
+</div><hr>
+<div class="copyrights" style="color: white; font-size: 12px; text-align: center;">  
+    © Copyrights FAevents and media pvt ltd, All Rights Reserved.
+</div>
+</div>  
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+  $("#toggle").click(function() {
+$(this      ).toggleClass("active");
+$("#overlay").toggleClass("open");
+});
+</script>
 </body>
 </html>

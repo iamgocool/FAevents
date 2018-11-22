@@ -14,32 +14,29 @@
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 </head>
 <body>
 <div class="container-fluid1">
 <div class="content">
-    <div class="container-fluidnav">
-        <div class="logo"><a href="index.html"><img src="./assets/media/logo.png"></a></div>
+<div class="container-fluidnav">
+    <div class="logo">
+    <a href="index.html"><img src="./assets/media/logo.png"></a>
     </div>
-    <div class="outer-menu">
-    <input class="checkbox-toggle" type="checkbox" />
-    <div class="hamburger">
-    <div></div>
-    </div>
-    <div class="menu">
-    <div>
-    <div>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="whoweare.html">Who We Are</a></li>
-        <li><a href="eventservices.html">Event Services</a></li>
-        <li><a href="ourexcellence.html">Our Excellence</a></li>
-        <li><a href="reachus.html">Reach Us</a></li>
-        </ul>
-    </div>
-    </div>
-    </div>
+</div>
+<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+<div class="overlay" id="overlay">
+<nav class="overlay-menu">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="whoweare.html">Who We Are</a></li>
+    <li><a href="eventservices.html">Event Services</a></li>
+    <li><a href="ourexcellence.html">Our Excellence</a></li>
+    <li><a href="reachus.html">Reach Us</a></li>
+    </ul>
+</nav>
 </div>
 <div id="box1">
 <div class="container-fluid2">
@@ -214,5 +211,16 @@ $('#customers-testimonials').owlCarousel({
 });
 });
 </script> 
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+  $("#toggle").click(function() {
+$(this      ).toggleClass("active");
+$("#overlay").toggleClass("open");
+});
+</script>
 </body>
 </html>
